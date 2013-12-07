@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9125548D-75D9-4AF0-8849-46D12A0C451E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />-->
+    <Folder Include=".cordova\hooks\after_build\" />
+    <Folder Include=".cordova\hooks\after_compile\" />
+    <Folder Include=".cordova\hooks\after_docs\" />
+    <Folder Include=".cordova\hooks\after_emulate\" />
+    <Folder Include=".cordova\hooks\after_platform_add\" />
+    <Folder Include=".cordova\hooks\after_platform_ls\" />
+    <Folder Include=".cordova\hooks\after_platform_rm\" />
+    <Folder Include=".cordova\hooks\after_plugin_add\" />
+    <Folder Include=".cordova\hooks\after_plugin_ls\" />
+    <Folder Include=".cordova\hooks\after_plugin_rm\" />
+    <Folder Include=".cordova\hooks\after_prepare\" />
+    <Folder Include=".cordova\hooks\after_run\" />
+    <Folder Include=".cordova\hooks\before_build\" />
+    <Folder Include=".cordova\hooks\before_compile\" />
+    <Folder Include=".cordova\hooks\before_docs\" />
+    <Folder Include=".cordova\hooks\before_emulate\" />
+    <Folder Include=".cordova\hooks\before_platform_add\" />
+    <Folder Include=".cordova\hooks\before_platform_ls\" />
+    <Folder Include=".cordova\hooks\before_platform_rm\" />
+    <Folder Include=".cordova\hooks\before_plugin_add\" />
+    <Folder Include=".cordova\hooks\before_plugin_ls\" />
+    <Folder Include=".cordova\hooks\before_plugin_rm\" />
+    <Folder Include=".cordova\hooks\before_prepare\" />
+    <Folder Include=".cordova\hooks\before_run\" />
+    <Folder Include="merges\" />
+    <Folder Include="platforms\" />
+    <Folder Include="plugins\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".cordova\config.json" />
+    <Content Include="www\config.xml" />
+    <Content Include="www\css\index.css" />
+    <Content Include="www\icon.png" />
+    <Content Include="www\img\logo.png" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\index.js" />
+    <Content Include="www\res\icon\android\icon-36-ldpi.png" />
+    <Content Include="www\res\icon\android\icon-48-mdpi.png" />
+    <Content Include="www\res\icon\android\icon-72-hdpi.png" />
+    <Content Include="www\res\icon\android\icon-96-xhdpi.png" />
+    <Content Include="www\res\icon\bada-wac\icon-48-type5.png" />
+    <Content Include="www\res\icon\bada-wac\icon-50-type3.png" />
+    <Content Include="www\res\icon\bada-wac\icon-80-type4.png" />
+    <Content Include="www\res\icon\bada\icon-128.png" />
+    <Content Include="www\res\icon\blackberry\icon-80.png" />
+    <Content Include="www\res\icon\ios\icon-57-2x.png" />
+    <Content Include="www\res\icon\ios\icon-57.png" />
+    <Content Include="www\res\icon\ios\icon-72-2x.png" />
+    <Content Include="www\res\icon\ios\icon-72.png" />
+    <Content Include="www\res\icon\tizen\icon-128.png" />
+    <Content Include="www\res\icon\webos\icon-64.png" />
+    <Content Include="www\res\icon\windows-phone\icon-173-tile.png" />
+    <Content Include="www\res\icon\windows-phone\icon-48.png" />
+    <Content Include="www\res\icon\windows-phone\icon-62-tile.png" />
+    <Content Include="www\res\screen\android\screen-hdpi-landscape.png" />
+    <Content Include="www\res\screen\android\screen-hdpi-portrait.png" />
+    <Content Include="www\res\screen\android\screen-ldpi-landscape.png" />
+    <Content Include="www\res\screen\android\screen-ldpi-portrait.png" />
+    <Content Include="www\res\screen\android\screen-mdpi-landscape.png" />
+    <Content Include="www\res\screen\android\screen-mdpi-portrait.png" />
+    <Content Include="www\res\screen\android\screen-xhdpi-landscape.png" />
+    <Content Include="www\res\screen\android\screen-xhdpi-portrait.png" />
+    <Content Include="www\res\screen\bada-wac\screen-type3.png" />
+    <Content Include="www\res\screen\bada-wac\screen-type4.png" />
+    <Content Include="www\res\screen\bada-wac\screen-type5.png" />
+    <Content Include="www\res\screen\bada\screen-portrait.png" />
+    <Content Include="www\res\screen\blackberry\screen-225.png" />
+    <Content Include="www\res\screen\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="www\res\screen\ios\screen-ipad-landscape.png" />
+    <Content Include="www\res\screen\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="www\res\screen\ios\screen-ipad-portrait.png" />
+    <Content Include="www\res\screen\ios\screen-iphone-landscape-2x.png" />
+    <Content Include="www\res\screen\ios\screen-iphone-landscape.png" />
+    <Content Include="www\res\screen\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="www\res\screen\ios\screen-iphone-portrait-568h-2x.png" />
+    <Content Include="www\res\screen\ios\screen-iphone-portrait.png" />
+    <Content Include="www\res\screen\webos\screen-64.png" />
+    <Content Include="www\res\screen\windows-phone\screen-portrait.jpg" />
+    <Content Include="www\spec.html" />
+    <Content Include="www\spec\helper.js" />
+    <Content Include="www\spec\index.js" />
+    <Content Include="www\spec\lib\jasmine-1.2.0\jasmine-html.js" />
+    <Content Include="www\spec\lib\jasmine-1.2.0\jasmine.css" />
+    <Content Include="www\spec\lib\jasmine-1.2.0\jasmine.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="www\res\screen\tizen\README.md" />
+    <Content Include="www\spec\lib\jasmine-1.2.0\MIT.LICENSE" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36262/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
